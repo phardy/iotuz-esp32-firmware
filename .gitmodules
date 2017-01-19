@@ -22,3 +22,6 @@
 [submodule "esp-idf"]
 	path = esp-idf
 	url = http://github.com/espressif/esp-idf
+[submodule "components/leds/esp32_led_strip"]
+	path = components/leds/esp32_led_strip
+	url = https://github.com/phardy/ESP32_LED_STRIP.git

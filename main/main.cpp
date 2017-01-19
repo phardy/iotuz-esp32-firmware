@@ -5,6 +5,7 @@
 #include "rotaryencoder.h"
 #include "mqttservice.h"
 #include "iotuz_graphics.h"
+#include "leds.h"
 
 #include "esp_system.h"
 #include "esp_event.h"
@@ -30,6 +31,7 @@ extern "C" void app_main()
     iotuz_graphics_initialize();
     sensors_initialize();
     joystick_initialize();
+    leds_initialize();
 
     xTaskCreatePinnedToCore(send_telemetry_task, "send_telemetry_task", 4096, NULL, 1, NULL, 1);
     xTaskCreatePinnedToCore(send_sensors_task, "send_sensors_task", 4096, NULL, 1, NULL, 1);
