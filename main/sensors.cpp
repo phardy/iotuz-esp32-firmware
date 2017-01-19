@@ -5,15 +5,13 @@
 
 #include "esp_log.h"
 
-static float readings[SENS_MAX-1];
+static float readings[SENS_MAX];
 
 static QueueHandle_t *subscriptions;
 static size_t num_subscriptions;
 static SemaphoreHandle_t sensor_mutex;
 
 static const char *TAG = "sensors";
-
-
 
 static void sensor_task(void *arg);
 
