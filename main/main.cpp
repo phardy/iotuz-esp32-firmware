@@ -5,7 +5,6 @@
 #include "rotaryencoder.h"
 #include "mqttservice.h"
 #include "iotuz_graphics.h"
-#include "leds.h"
 
 #include "esp_system.h"
 #include "esp_event.h"
